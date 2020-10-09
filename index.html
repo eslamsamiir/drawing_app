@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="colorSelector">
+      <input type="checkbox" id="draw" name="draw" value="draw">
+      <label for="draw"> Draw</label><br>
+      <input type="checkbox" id="erase" name="erase" value="erase">
+      <label for="erase"> Erase</label><br>
+    </div>
+
+    <div class="sizeSelector">
+      <label for="favsize">Select drawing size:</label>
+      <input type="range" min="1" max="5" id="favsize" name="favsize" value=1> 
+      <span class="drawText">1</span>
+      <label for="eraseSize">Select erasing size:</label>
+      <input type="range" min="5" max="50" id="erasesize" name="erasesize" value=1> 
+      <span class="eraseText">1</span>
+
+    </div>
+
+    <div>
+      <canvas></canvas>
+    </div>
+
+    <div id="cursor"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
